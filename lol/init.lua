@@ -54,7 +54,4 @@ function Hole(options)
 	return openableHole
 end
 
-local hole = Hole()
-hole:expect_requests()
-
 return Hole
