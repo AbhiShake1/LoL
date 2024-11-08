@@ -23,6 +23,7 @@ function Hole(options)
 				request = request:lower()
 				if self.accepted_requests[request] then
 					self.accepted_requests[request](self)
+					res:finish()
 				else
 					res:statusCode(404)
 					res:finish("Unknown request: " .. request)
