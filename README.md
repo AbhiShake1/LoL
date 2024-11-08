@@ -6,19 +6,19 @@ Being highly energetic bois always looking to `INSERT INTO hole`, let's create a
 ```lua
 local Hole = require 'lol.hole'
 local hole = Hole({
-  port = 8080,
+  port = 6969,
 })
 ```
 This hole is now ready to receive requests. And its fun like `INSERTING INTO` **real** `hole`, but without the associated effort, time, cost, and drama.
 
 Now, let's define what requests the hole accepts:
 ```lua
-hole:accept('withhelmet', function(hole)
+hole('withhelmet', function(hole)
   print('executes')
   hole:accept('Was it fun')
 end)
 
-hole:accept('withoutHelmet', function(hole)
+hole('withoutHelmet', function(hole)
   hole:reject('SAFETY FIRST!!!')
   print('executes-not')
 end)
