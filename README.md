@@ -13,13 +13,13 @@ This hole is now ready to receive requests. And its fun like `INSERTING INTO` **
 
 Now, let's define what requests the hole accepts:
 ```lua
-hole:accept('withhelmet', function(req)
+hole:accept('withhelmet', function(hole)
   print('executes')
-  req:accept('Was it fun')
+  hole:accept('Was it fun')
 end)
 
-hole:accept('withoutHelmet', function(req)
-  req:reject('SAFETY FIRST!!!')
+hole:accept('withoutHelmet', function(hole)
+  hole:reject('SAFETY FIRST!!!')
   print('executes-not')
 end)
 ```
