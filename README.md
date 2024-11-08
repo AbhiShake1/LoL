@@ -4,7 +4,7 @@ LoL (Lua on Lauda) is a Lua framework for highly energetic bois. There is only c
 # Usage
 Being highly energetic bois always looking to `INSERT INTO hole`, let's create a `hole` first:
 ```lua
-local Hole = require 'lol.hole'
+local Hole = require 'lol'
 local hole = Hole({
   port = 6969,
 })
