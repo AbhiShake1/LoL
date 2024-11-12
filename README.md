@@ -1,5 +1,5 @@
 # About
-**LoL (Lua on Lauda)** is a Lua framework for highly energetic bois. There is only concept: `hole`, and only one philosophy: `INSERT INTO hole`.
+**LoL (Lua on Lauda)** is a Lua framework for highly energetic bois. There is only one concept: `hole`, and only one philosophy: `INSERT INTO hole`.
 
 # Usage
 Being highly energetic bois always looking to `INSERT INTO hole`, let's create a `hole` first:
